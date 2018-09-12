@@ -23,14 +23,14 @@
         {{- end }}
 
         <!-- Counter busuanzi -->
-        {{ if .Site.Params.counter.busuanzi.enable }}
+        {{ if and (.Site.Params.counter.busuanzi.enable) (.Site.Params.counter.busuanzi.show) }}
           <span id="busuanzi_container_page_pv">
             | 阅读 <span id="busuanzi_value_page_pv"></span>
           </span>
         {{ end }}
 
         <!-- Counter leancloud -->
-        {{ if .Site.Params.counter.leancloud.enable }}
+        {{ if and (.Site.Params.counter.leancloud.enable) (.Site.Params.counter.leancloud.show) }}
           <span id="{{ .URL }}" class="leancloud_visitors" data-flag-title="{{ .Title }}">
             <span class="post-meta-item-text"> | 阅读 </span>
             <span class="leancloud-visitors-count"></span>

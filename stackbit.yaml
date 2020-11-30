@@ -214,6 +214,9 @@ models:
               - type: string
                 name: r-codeforces
                 label: Codeforces
+              - type: string
+                name: s-mastodon
+                label: Mastodon
   basicpage:
     type: page
     label: Basic page
@@ -293,6 +296,14 @@ models:
         name: mathjax
         label: Mathjax
         description: see https://www.mathjax.org/
+      - type: boolean
+        name: katex
+        label: Katex
+        description: See https://github.com/KaTeX/KaTeX
+      - type: string
+        name: markup
+        label: Markup
+        description: See https://gohugo.io/content-management/formats/#mmark
       - type: number
         name: weight
         label: Weight
